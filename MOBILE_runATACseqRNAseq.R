@@ -321,8 +321,8 @@ runAssocRankerRA <- function(cutoffval, TLasMats, XX_Annots, XX_IDs, YY_Annots, 
   return(list(intranks_r, intranks_ii, numedges, TLasTarget))
 }
 
-ATACseq_lvl42<-readRDS("C:/Users/senra.000/Desktop/Mobile_R/ATACseq_lvl42.rds")
-RNAseq_lvl42<-readRDS("C:/Users/senra.000/Desktop/Mobile_R/RNAseq_lvl42.rds")
+ATACseq_lvl42<-readRDS(".../Mobile_R/ATACseq_lvl42.rds")
+RNAseq_lvl42<-readRDS(".../Mobile_R/RNAseq_lvl42.rds")
 TLasMats<-as.matrix(TLasMats)
 
 results <- runAssocRankerRA(0.5, TLasMats, ATACseq_lvl42, ATACseqIDs, RNAseq_lvl42, RNAseqIDs)

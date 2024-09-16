@@ -321,7 +321,7 @@ runAssocRankerRpR <- function(cutoffval, TLasMats, XX_Data, XX_IDs, YY_Data, YY_
   intranks_ii <- intranks_r[intranks_r$hgnc_id_XX == intranks_r$hgnc_id_YY, ]
  return(list(intranks_r, intranks_ii, numedges, TLasTarget))
 }
-RPPA<-readRDS(".../Mobile_R/RPPA.rds")
+RPPA<-readRDS(".../Mobile_R/RPPA_lvl4.rds")
 RNAseq_lvl42<-readRDS(".../Mobile_R/RNAseq_lvl42.rds")
 TLasMats<-readRDS(".../Mobile_R/FULL_RpR/TLasMats.rds")
 TLasMats<-as.matrix(TLasMats)
